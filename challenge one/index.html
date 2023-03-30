@@ -7,13 +7,15 @@
     <title>Grade converter</title>
 </head>
 <body>
+  <!-- Creating a button to input the numeric grade   -->
     <input id="numericGrade"/> 
     <button onclick="convert()">Grade</button>
     <h3 id="DisplayGrade">  </h3>
      <script>
+    //    Selecting the elements in my javascript 
         const numericGrade= document.getElementById('numericGrade')
         const DisplayGrade= document.getElementById('DisplayGrade')
-
+    //   Using if functions to satisfy my conditions  
         function convert(){
             const numeric= parseInt(numericGrade.value)
             let grade;
@@ -33,6 +35,7 @@
             else{
                 grade='E'
             }
+        //   Displaying my ggrade on the screen for the user  
         DisplayGrade.innerText=`Your grade is ${grade}`
         }
         
