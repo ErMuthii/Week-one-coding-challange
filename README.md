@@ -6,3 +6,5 @@ This file includes two complete challenges and one incomplete challange.
 *Challenge 2: Speed Detector-Completed
 
 *Challenge 3: Net Salary Calculator-Incomplete 
+
+The auther of this project is Eric Muthii who has all the lisences belong to him
