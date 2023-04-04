@@ -1,1 +1,36 @@
-<!-- Im having challanges with three put please mark my other two -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="grossSalary">
+    <h3 id="displayNet"> </h3>
+    <!-- Created a button which when clicked refers the value inputed to the javascriptcode -->
+        <button onclick="calculateNetSalary()">Net Salary</button>
+
+    <script>
+    // Fetched my data into my script element    
+        const netSalary = document.getElementById('grossSalary')
+        const displaySalary= document.getElementById('displayNet')
+
+        function calculateNetSalary(){
+    // Converted the input value from a string to a numnber for ease of calculation        
+            const net= parseInt(netSalary.value)
+    // Used tax rates based on the fact the company pays more than 33,000Ksh
+                const taxRate= 0.3;
+                const deductions=1900;
+
+                const calculations= net * (1 - taxRate) - deductions
+    // Displayed the results of my code to the user              
+                     displaySalary.innerHTML=`Your salary after tax is ${calculations}`
+        }
+                       
+    </script>  
+      
+</body>
+</html>
+
